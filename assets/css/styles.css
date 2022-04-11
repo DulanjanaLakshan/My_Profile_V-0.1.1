@@ -1,40 +1,80 @@
-.container{
+.container {
     width: 100%;
-    min-height: 100vh;
+    min-height: 9vh;
     padding-left: 8%;
     padding-right: 8%;
     box-sizing: border-box;
     overflow: hidden;
 }
-.navbar{
+
+.navbar {
     width: 100%;
     display: flex;
     align-items: center;
 }
-.name{
+
+.name {
     font-size: 30px;
     color: red;
     font-family: system-ui;
     cursor: pointer;
 }
-.menu-icon{
+
+.menu-icon {
     width: 25px;
     cursor: pointer;
 }
-nav{
+
+nav {
     flex: 1;
     text-align: right;
 }
-nav ul li{
+
+nav ul li {
     list-style: none;
     display: inline-block;
     margin-right: 40px;
 }
-nav ul li a{
-    color: black;
+
+nav ul li a {
+    color: white;
     text-decoration: none;
     font-size: 17px;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     color: red;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 335px 0;
+}
+
+.col-1 {
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 210px;
+}
+.col-1 h2{
+    font-size: 45px;
+    color: white;
+}
+.col-1 h3{
+    font-size: 25px;
+    color: #a8a8a8;
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+#main_se{
+    z-index: -1;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    background-image: url("../img/my_bg.jpg");
+    background-size: cover;
+    background-position: center;
 }
