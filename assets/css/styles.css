@@ -23,7 +23,13 @@
 .menu-icon {
     width: 25px;
     cursor: pointer;
+    display: block;
+    top: 4%;
+    position: absolute;
+    /* left: 0; */
+    right: 8%;
 }
+
 
 nav {
     flex: 1;
@@ -77,4 +83,36 @@ nav ul li a:hover {
     background-image: url("../img/my_bg.jpg");
     background-size: cover;
     background-position: center;
+}
+button{
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(to right, #ff4747, #ff0000);
+    border-radius: 6px;
+    cursor: pointer;
+}
+#mobile{
+    display: none;
+}
+#mobile nav {
+    text-align: center;
+    max-height: 200px;
+    position: relative;
+    top: -42px;
+}
+#mobile nav ul{
+    display: grid;
+
+}
+#mobile nav ul li{
+    margin-top: 20px;
+}
+.menu-icon{
+    display: none;
+}
+#close{
+    display: none;
 }
