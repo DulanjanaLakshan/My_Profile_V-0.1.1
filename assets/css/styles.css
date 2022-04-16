@@ -1,3 +1,6 @@
+header{
+    background-color: black;
+}
 .container {
     width: 100%;
     min-height: 9vh;
@@ -56,7 +59,9 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 335px 0;
+    margin: 0;
+    position: relative;
+    top: 319px;
 }
 
 .col-1 {
@@ -64,19 +69,22 @@ nav ul li a:hover {
     position: relative;
     margin-left: 210px;
 }
-.col-1 h2{
+
+.col-1 h2 {
     font-size: 45px;
     color: white;
 }
-.col-1 h3{
+
+.col-1 h3 {
     font-size: 25px;
     color: #a8a8a8;
     font-weight: 100;
     margin: 20px 0 10px;
 }
-#main_se{
+
+#main_se {
     z-index: -1;
-    position: absolute;
+    position: relative;
     height: 100vh;
     width: 100%;
     top: 0;
@@ -84,7 +92,8 @@ nav ul li a:hover {
     background-size: cover;
     background-position: center;
 }
-button{
+
+button {
     width: 140px;
     border: 0;
     padding: 12px 10px;
@@ -94,25 +103,61 @@ button{
     border-radius: 6px;
     cursor: pointer;
 }
-#mobile{
+
+#mobile {
     display: none;
 }
+
 #mobile nav {
     text-align: center;
     max-height: 200px;
     position: relative;
     top: -42px;
 }
-#mobile nav ul{
+
+#mobile nav ul {
     display: grid;
 
 }
-#mobile nav ul li{
+
+#mobile nav ul li {
     margin-top: 20px;
 }
-.menu-icon{
+
+.menu-icon {
     display: none;
 }
-#close{
+
+#close {
     display: none;
+}
+
+/*-------------------------------------------------------------------------------------*/
+#About{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+#About div{
+    border: 1px solid black;
+    width: 50%;
+    height: 75%;/**/
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+#About div:nth-child(2){
+    right: 0;
+}
+
+#AboutImg{
+    width: 490px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
 }
