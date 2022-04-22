@@ -1,6 +1,10 @@
-header{
+body{
+    overflow-x: hidden;
+}
+header {
     background-color: black;
 }
+
 .container {
     width: 100%;
     min-height: 9vh;
@@ -133,31 +137,79 @@ button {
 }
 
 /*-------------------------------------------------------------------------------------*/
-#About{
+#About {
     position: relative;
     width: 100%;
     height: 100vh;
     display: flex;
 }
-#About div{
-    border: 1px solid black;
+#About>div{
+    position: relative;
     width: 50%;
-    height: 75%;/**/
+    height: 70%;
+    top: 0;
+    right: 5%;
+    bottom: 0;
+    margin: auto;
+}
+#About>div:nth-child(2){
+    right: 0;
+}
+#About>div:nth-child(1)>div{
+    border-radius: 100px 0 100px 0;
+    width: 50%;
+    height: 84%;
     position: absolute;
+    right: 0;
     top: 0;
     bottom: 0;
     margin: auto;
 }
-#About div:nth-child(2){
-    right: 0;
-}
-
-#AboutImg{
-    width: 490px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
+#About>div:nth-child(1)>div:nth-child(1){
+    right: 3%;
+    top: -8%;
     bottom: 0;
     margin: auto;
+    background: linear-gradient(to right, #ff4747, #ff0000);
+}
+#About>div:nth-child(1)>div:nth-child(2){
+    background-image: url("../img/about.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#About_h1{
+    text-align: center;
+    font-size: 64px;
+    margin-top: 100px;
+    margin-bottom: 0;
+    color: #ff0202;
+    text-shadow: 3px 0 2px black;
+    font-family: system-ui;
+}
+#About_p{
+    width: 82%;
+    height: 30%;
+    position: relative;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+#About_p>p{
+    text-align: center;
+    font-size: 22px;
+    position: relative;
+    top: 30px;
+    color: black;
+    font-family: monospace;
+}
+#About_p>button{
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    margin: auto;
+    background: linear-gradient(to right, #ff4747, #ff0000);
+}
+#About_p>button:nth-child(2){
+    right: 25%;
 }
