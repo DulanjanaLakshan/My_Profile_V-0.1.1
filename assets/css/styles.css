@@ -137,79 +137,105 @@ button {
 }
 
 /*-------------------------------------------------------------------------------------*/
-#About {
-    position: relative;
+
+#About{
+   position: relative;
+   height: 750px;
+}
+#titel{
+    position: absolute;
+    font-family: 'Nunito', sans-serif;
+    font-size: 35px;
+    top: 45px;
+    left: 300px;
+    border-bottom: 3px solid red;
+}
+.frame{
+    position: absolute;
+    width: 389px;
+    height: 525px;
+    border-radius: 20px;
+    box-shadow: 1px 3px 6px 2px #899096;
+    top: 26%;
+    left: 25%;
+    background: linear-gradient(to right, #ff4747, #ff0000);
+}
+.image{
+    position: absolute;
+    width: 389px;
+    height: 525px;
+    border-radius: 20px;
+    box-shadow: 1px 3px 6px 2px #899096;
+    top: 22%;
+    left: 23%;
+}
+.content{
+    position: absolute;
+    left: 50%;
+    top: 33%;
+    width: 630px;
+    height: 378px;
+}
+.heder1{
+    position: absolute;
+    font-size: 30px;
+    top: 0;
+}
+.heder2{
+    position: absolute;
+    font-size: 20px;
+    top: 40px;
+    color: #ff3c00;
+}
+.aboutPara{
+    position: absolute;
+    top: 26%;
+    font-size: 21px;
+    font-family: 'PT Sans', sans-serif;
+}
+.button-about{
+    position: absolute;
+    width: 382px;
+    height: 30px;
+    top: 270px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.button-about>a{
+    position: absolute;
+    width: 180px;
+    height: 30px;
+}
+.button-about>a:nth-child(1){
+    left: 0;
+}
+.button-about>a:nth-child(2){
+    right: 0;
+}
+.button-about>a>button{
+    position: absolute;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 20px;
     width: 100%;
-    height: 100vh;
-    display: flex;
+    height: 150%;
+    border: 0; 
 }
-#About>div{
-    position: relative;
-    width: 50%;
-    height: 70%;
-    top: 0;
-    right: 5%;
-    bottom: 0;
-    margin: auto;
+.button-about>a>.btnHireMe{
+    background: #1C2520;
+    color: white;
+    transition: all 0.6s ease;  
 }
-#About>div:nth-child(2){
-    right: 0;
+.button-about>a>.btnHireMe:hover{
+    background: black;
 }
-#About>div:nth-child(1)>div{
-    border-radius: 100px 0 100px 0;
-    width: 50%;
-    height: 84%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+.button-about>a>.btnCV{
+    background: #ff0800;
+    color: white;
+    border: 0;
+    transition: all 0.6s ease;
 }
-#About>div:nth-child(1)>div:nth-child(1){
-    right: 3%;
-    top: -8%;
-    bottom: 0;
-    margin: auto;
-    background: linear-gradient(to right, #ff4747, #ff0000);
-}
-#About>div:nth-child(1)>div:nth-child(2){
-    background-image: url("../img/about.jpg");
-    background-position: center;
-    background-size: cover;
-}
-#About_h1{
-    text-align: center;
-    font-size: 64px;
-    margin-top: 100px;
-    margin-bottom: 0;
-    color: #ff0202;
-    text-shadow: 3px 0 2px black;
-    font-family: system-ui;
-}
-#About_p{
-    width: 82%;
-    height: 30%;
-    position: relative;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-#About_p>p{
-    text-align: center;
-    font-size: 22px;
-    position: relative;
-    top: 30px;
-    color: black;
-    font-family: monospace;
-}
-#About_p>button{
-    position: absolute;
-    bottom: 0;
-    right: 5%;
-    margin: auto;
-    background: linear-gradient(to right, #ff4747, #ff0000);
-}
-#About_p>button:nth-child(2){
-    right: 25%;
+.button-about>a>.btnCV:hover{
+    background: rgb(170, 0, 0);
 }
