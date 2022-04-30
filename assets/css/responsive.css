@@ -25,7 +25,37 @@
         font-weight: 100;
         margin: 12px 0 11px;
     }
-
+    #titel {
+        top: 40px;
+        left: 140px;
+    }
+    .image {
+        width: 289px;
+        height: 425px;
+        top: 22%;
+        left: 16%;
+    }
+    .frame {
+        width: 289px;
+        height: 425px;
+    }
+    .content {
+        left: 16px;
+        top: 84%;
+        width: 378px;
+        height: 378px;
+    }
+    .aboutPara {
+        font-size: 15px;
+    }
+    .button-about>a {
+        width: 145px;
+        height: 28px;
+    }
+    .button-about {
+        top: 220px;
+        left: 50%;
+    }
 }
 
 @media all and (min-width: 425px) and (max-width: 768px) {
@@ -60,7 +90,19 @@
         font-weight: 100;
         margin: 20px 0 20px;
     }
-
+    #About {
+        height: 1210px;
+    }
+    .image {
+        top: 12%;
+    }
+    .frame {
+        top: 16%;
+    }
+    .content {
+        left: 2%;
+        top: 60%;
+    }
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
@@ -75,6 +117,22 @@
     .col-1 {
         flex-basis: 76%;
         margin-left: 55px;
+    }
+    .image {
+        left: 4%;
+    }
+    .frame {
+        left: 6%;
+    }
+    .content {
+        width: 380px;
+    }
+    .aboutPara {
+        font-size: 18px;
+    }
+    #titel {
+        top: 45px;
+        left: 50px;
     }
 }
 
@@ -91,6 +149,12 @@
         flex-basis: 60%;
         margin-left: 80px;
     }
+    .image {
+        left: 13%;
+    }
+    .frame {
+        left: 15%;
+    }
 }
 
 @media all and (min-width: 1440px) and (max-width: 2560px) {
@@ -100,5 +164,11 @@
 
     #close {
         display: none;
+    }
+    .image {
+        left: 13%;
+    }
+    .frame {
+        left: 15%;
     }
 }
