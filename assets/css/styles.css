@@ -1,6 +1,7 @@
-body{
+body {
     overflow-x: hidden;
 }
+
 header {
     background-color: black;
 }
@@ -138,19 +139,31 @@ button {
 
 /*-------------------------------------------------------------------------------------*/
 
-#About{
-   position: relative;
-   height: 750px;
+#About {
+    position: relative;
+    height: 750px;
 }
-#titel{
+
+#titel {
     position: absolute;
     font-family: 'Nunito', sans-serif;
     font-size: 35px;
     top: 45px;
     left: 300px;
-    border-bottom: 3px solid red;
 }
-.frame{
+
+#titel::after {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    content: " ";
+    width: 100%;
+    height: 8px;
+    background: #ff0000;
+    border-radius: 30px;
+}
+
+.frame {
     position: absolute;
     width: 389px;
     height: 525px;
@@ -160,7 +173,8 @@ button {
     left: 25%;
     background: linear-gradient(to right, #ff4747, #ff0000);
 }
-.image{
+
+.image {
     position: absolute;
     width: 389px;
     height: 525px;
@@ -169,31 +183,36 @@ button {
     top: 22%;
     left: 23%;
 }
-.content{
+
+.content {
     position: absolute;
     left: 50%;
     top: 33%;
     width: 630px;
     height: 378px;
 }
-.heder1{
+
+.heder1 {
     position: absolute;
     font-size: 30px;
     top: 0;
 }
-.heder2{
+
+.heder2 {
     position: absolute;
     font-size: 20px;
     top: 40px;
     color: #ff3c00;
 }
-.aboutPara{
+
+.aboutPara {
     position: absolute;
     top: 26%;
     font-size: 21px;
     font-family: 'PT Sans', sans-serif;
 }
-.button-about{
+
+.button-about {
     position: absolute;
     width: 382px;
     height: 30px;
@@ -201,18 +220,22 @@ button {
     left: 50%;
     transform: translateX(-50%);
 }
-.button-about>a{
+
+.button-about > a {
     position: absolute;
     width: 180px;
     height: 30px;
 }
-.button-about>a:nth-child(1){
+
+.button-about > a:nth-child(1) {
     left: 0;
 }
-.button-about>a:nth-child(2){
+
+.button-about > a:nth-child(2) {
     right: 0;
 }
-.button-about>a>button{
+
+.button-about > a > button {
     position: absolute;
     font-size: 15px;
     font-weight: 700;
@@ -220,22 +243,122 @@ button {
     border-radius: 20px;
     width: 100%;
     height: 150%;
-    border: 0; 
+    border: 0;
 }
-.button-about>a>.btnHireMe{
+
+.button-about > a > .btnHireMe {
     background: #1C2520;
     color: white;
-    transition: all 0.6s ease;  
+    transition: all 0.6s ease;
 }
-.button-about>a>.btnHireMe:hover{
+
+.button-about > a > .btnHireMe:hover {
     background: black;
 }
-.button-about>a>.btnCV{
+
+.button-about > a > .btnCV {
     background: #ff0800;
     color: white;
     border: 0;
     transition: all 0.6s ease;
 }
-.button-about>a>.btnCV:hover{
+
+.button-about > a > .btnCV:hover {
     background: rgb(170, 0, 0);
+}
+
+/*--------------------------------------------------------------------------------------*/
+#Services {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+.services-box {
+    position: absolute;
+    width: 350px;
+    height: 320px;
+    border-radius: 20px;
+    box-shadow: 1px 3px 6px 2px #899096;
+    top: 28%;
+    transition: 0.5s;
+}
+
+.services-box:nth-child(1) {
+    left: 10%;
+    background-image: url("../img/desktopD.jpeg");
+    background-size: 158%;
+    background-position: center;
+}
+.services-box:nth-child(1):hover{
+    background-image: url("../img/desktopDH.jpg");
+    background-size: 158%;
+    background-position: center;
+}
+.services-box:nth-child(2) {
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-image: url("../img/mobileD.png");
+    background-size: cover;
+    background-position: center;
+}
+.services-box:nth-child(2):hover{
+    background-image: url("../img/mobileDH.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.services-box:nth-child(3) {
+    right: 10%;
+    background-image: url("../img/webD.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.services-box:nth-child(3):hover{
+    background-image: url("../img/webDH.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.services-box:hover{
+    width: 370px;
+    height: 340px;
+    z-index: 1;
+    transition: 1s;
+}
+#se-title{
+    position: absolute;
+    font-family: 'Nunito', sans-serif;
+    font-size: 35px;
+    top: 0;
+    right: 200px;
+}
+#se-title::after{
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    content: " ";
+    width: 100%;
+    height: 8px;
+    background: #ff0000;
+    border-radius: 30px;
+}
+.text-h{
+    position: absolute;
+    width: max-content;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    color: white;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    transition: all 0.4s ease-out;
+    text-shadow: 3px 2px 3px black;
+    opacity: 0;
+}
+.services-box:hover>.text-h{
+    opacity: 1;
+}
+.services-box:nth-child(3)>.text-h{
+    top: 39%;
 }
