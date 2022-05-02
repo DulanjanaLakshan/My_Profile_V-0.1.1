@@ -402,7 +402,8 @@ button {
     background: #ff0000;
     border-radius: 30px;
 }
-.project-line{
+
+.project-line {
     position: absolute;
     width: 5px;
     height: 243px;
@@ -414,43 +415,52 @@ button {
     margin: auto;
     border-radius: 10px;
 }
-.project-div{
+
+.project-div {
     position: absolute;
     width: 700px;
     height: 100px;
     border-radius: 20px;
 }
-#p-1{
+
+#p-1 {
     left: 10%;
     top: 26%;
 }
-#p-2{
+
+#p-2 {
     top: 26%;
     left: 53%;
 }
-#p-3{
+
+#p-3 {
     top: 47%;
     left: 10%;
 }
-#p-4{
+
+#p-4 {
     top: 47%;
     left: 53%;
 }
-#p-5{
+
+#p-5 {
     top: 69%;
     left: 10%;
 }
-#p-6{
+
+#p-6 {
     top: 69%;
     left: 53%;
 }
-.p-h2{
+
+.p-h2 {
     position: absolute;
     font-family: monospace;
     font-size: 25px;
     left: 10px;
 }
-.p-RM{
+
+.p-RM {
     position: absolute;
     bottom: 10px;
     left: 10px;
@@ -458,12 +468,15 @@ button {
     color: #25272b;
     text-shadow: 1px 0px 1px black;
 }
-.p-RM:hover{
+
+.p-RM:hover {
     color: red;
 }
-.project-div:hover{
+
+.project-div:hover {
     box-shadow: 1px 3px 6px 2px #899096;
 }
-.project-line:nth-child(2){
-    left: -1628px;
+
+.project-line:nth-child(2) {
+    left: -86%;
 }
