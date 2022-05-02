@@ -271,7 +271,10 @@ button {
 #Services {
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 500px;
+    background-image: url("../img/bg-s.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .services-box {
@@ -290,11 +293,13 @@ button {
     background-size: 158%;
     background-position: center;
 }
-.services-box:nth-child(1):hover{
+
+.services-box:nth-child(1):hover {
     background-image: url("../img/desktopDH.jpg");
     background-size: 158%;
     background-position: center;
 }
+
 .services-box:nth-child(2) {
     left: 0;
     right: 0;
@@ -303,7 +308,8 @@ button {
     background-size: cover;
     background-position: center;
 }
-.services-box:nth-child(2):hover{
+
+.services-box:nth-child(2):hover {
     background-image: url("../img/mobileDH.jpg");
     background-size: cover;
     background-position: center;
@@ -315,25 +321,30 @@ button {
     background-size: cover;
     background-position: center;
 }
-.services-box:nth-child(3):hover{
+
+.services-box:nth-child(3):hover {
     background-image: url("../img/webDH.jpg");
     background-size: cover;
     background-position: center;
 }
-.services-box:hover{
+
+.services-box:hover {
     width: 370px;
     height: 340px;
     z-index: 1;
     transition: 1s;
 }
-#se-title{
+
+#se-title {
     position: absolute;
     font-family: 'Nunito', sans-serif;
     font-size: 35px;
     top: 0;
     right: 200px;
+    color: white;
 }
-#se-title::after{
+
+#se-title::after {
     position: absolute;
     left: 0;
     bottom: -10px;
@@ -343,7 +354,8 @@ button {
     background: #ff0000;
     border-radius: 30px;
 }
-.text-h{
+
+.text-h {
     position: absolute;
     width: max-content;
     font-family: 'Ubuntu', sans-serif;
@@ -356,9 +368,102 @@ button {
     text-shadow: 3px 2px 3px black;
     opacity: 0;
 }
-.services-box:hover>.text-h{
+
+.services-box:hover > .text-h {
     opacity: 1;
 }
-.services-box:nth-child(3)>.text-h{
+
+.services-box:nth-child(3) > .text-h {
     top: 39%;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+#Project {
+    position: relative;
+    width: 100%;
+    height: 800px;
+}
+
+.text-p {
+    position: absolute;
+    font-family: 'Nunito', sans-serif;
+    font-size: 35px;
+    top: 45px;
+    left: 300px;
+}
+
+.text-p::after {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    content: " ";
+    width: 100%;
+    height: 8px;
+    background: #ff0000;
+    border-radius: 30px;
+}
+.project-line{
+    position: absolute;
+    width: 5px;
+    height: 243px;
+    background: red;
+    left: 0;
+    top: 75px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 10px;
+}
+.project-div{
+    position: absolute;
+    width: 700px;
+    height: 100px;
+    border-radius: 20px;
+}
+#p-1{
+    left: 10%;
+    top: 26%;
+}
+#p-2{
+    top: 26%;
+    left: 53%;
+}
+#p-3{
+    top: 47%;
+    left: 10%;
+}
+#p-4{
+    top: 47%;
+    left: 53%;
+}
+#p-5{
+    top: 69%;
+    left: 10%;
+}
+#p-6{
+    top: 69%;
+    left: 53%;
+}
+.p-h2{
+    position: absolute;
+    font-family: monospace;
+    font-size: 25px;
+    left: 10px;
+}
+.p-RM{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    text-decoration: none;
+    color: #25272b;
+    text-shadow: 1px 0px 1px black;
+}
+.p-RM:hover{
+    color: red;
+}
+.project-div:hover{
+    box-shadow: 1px 3px 6px 2px #899096;
+}
+.project-line:nth-child(2){
+    left: -1628px;
 }
